@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haijun Wen — Founder & CEO, Light Ark Technologies</title>
+<meta name="description" content="Haijun Wen is the founder and CEO of Light Ark Technologies. He builds ArcOS, a model-agnostic compound-AI engine with persistent persona and long-term memory, running in production on a self-operated NVIDIA H200.">
+
+<!-- ============================================================
+     haijunwen.com  ·  personal founder landing page  ·  v1.2
+     (v1.2 = 2026-06-09/10: numbers re-measured from repo
+      (~380 commits, ~28k LOC backend), patent paragraph kept
+      neutral per wenha decision (provisional in prep with counsel,
+      no claim-family count), X handle fixed to @HaijunWenAI,
+      LinkedIn placeholder filled. v1.1 = facts verified across
+      GitHub repo + Google Drive, 2026-06-04.)
+
+     Style reference: karpathy.ai (substance > decoration, every
+     claim verifiable, zero frameworks, fast).
+
+     〔VARIABLES〕 only TWO left — search for 〔 :
+       - headshot.jpg  (one professional photo, reuse everywhere)
+       - email / web-app user count (optional, see notes)
+     RULES: no PII (SSN/passport/DOB/bank/home street). No ADR-004
+     L3 restricted terms. Do NOT link the product's current
+     (off-brand) web URL here — keep the LAT brand separate.
+     Keep facts IDENTICAL to LinkedIn / GitHub / X.
+     ============================================================ -->
+
+<meta property="og:title" content="Haijun Wen — Founder & CEO, Light Ark Technologies">
+<meta property="og:description" content="Building ArcOS: model-agnostic compound AI with persistent persona and long-term memory, in production on a self-operated NVIDIA H200.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://haijunwen.com">
+<!-- <meta property="og:image" content="https://haijunwen.com/og.png"> 〔add a 1200x630 share image〕 -->
+
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#666; --line:#e6e6e6;
+    --accent:#0b5cff; --card:#fafafa; --maxw:680px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e0f11; --fg:#eaeaea; --muted:#9aa0a6; --line:#26282c;
+           --accent:#6ea8ff; --card:#15171a; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{display:flex; align-items:center; justify-content:space-between;
+    padding:26px 0 10px; gap:16px}
+  .brand{display:flex; align-items:center; gap:13px}
+  .brand img{width:46px; height:46px; border-radius:50%; object-fit:cover;
+    background:var(--card); border:1px solid var(--line)}
+  .brand .nm{font-weight:650; letter-spacing:-.01em}
+  .brand .rl{color:var(--muted); font-size:13.5px}
+  nav a{color:var(--muted); font-size:14.5px; margin-left:16px}
+  nav a:hover{color:var(--fg)}
+  .hero{padding:34px 0 8px}
+  .hero h1{font-size:30px; line-height:1.2; letter-spacing:-.02em; margin:0 0 14px}
+  .hero p{font-size:18.5px; color:var(--fg); margin:0 0 10px}
+  .hero .loc{color:var(--muted); font-size:15px; margin-top:4px}
+  .proof{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 6px}
+  .proof span{font-size:13px; color:var(--muted); background:var(--card);
+    border:1px solid var(--line); border-radius:999px; padding:5px 12px; white-space:nowrap}
+  section{padding:26px 0; border-top:1px solid var(--line)}
+  section:first-of-type{border-top:none}
+  h2{font-size:13px; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--muted); font-weight:650; margin:0 0 16px}
+  .row{margin:0 0 18px}
+  .row h3{font-size:17px; margin:0 0 3px; font-weight:620}
+  .row .meta{color:var(--muted); font-size:14px; margin:0 0 5px}
+  .row p{margin:0; color:var(--fg)}
+  .about p{margin:0 0 12px}
+  .links{display:flex; flex-wrap:wrap; gap:10px 18px; font-size:15px}
+  footer{padding:30px 0 50px; color:var(--muted); font-size:13.5px;
+    border-top:1px solid var(--line)}
+  .note{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <!-- 〔HEADSHOT〕 one professional photo, reuse the SAME one on every platform. -->
+      <img src="headshot.jpg" alt="Haijun Wen" onerror="this.style.display='none'">
+      <div>
+        <div class="nm">Haijun Wen</div>
+        <div class="rl">Founder &amp; CEO, Light Ark Technologies</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Building AI that remembers&nbsp;— and stays itself.</h1>
+    <p>I&rsquo;m the founder and CEO of <strong>Light Ark Technologies</strong>. I build
+       <strong>ArcOS</strong>, a model-agnostic compound-AI engine that gives AI a
+       persistent persona and long-term memory&nbsp;&mdash; and I run it in production on
+       a dedicated NVIDIA H200 I own and operate.</p>
+    <div class="loc">Chino Hills, California &middot; Greater Los Angeles</div>
+
+    <div class="proof">
+      <span>Founder &amp; CEO &middot; Light Ark Technologies, Inc. (C-Corp)</span>
+      <span>ArcOS &middot; 75 hard-coded decision blocks, model-agnostic</span>
+      <span>Self-owned NVIDIA H200 (143&nbsp;GB)</span>
+      <span>MBA &middot; Heriot-Watt University</span>
+    </div>
+  </div>
+
+  <section id="work">
+    <h2>What I&rsquo;m building</h2>
+
+    <div class="row">
+      <h3>ArcOS &mdash; a compound-AI engine</h3>
+      <div class="meta">Architect &amp; principal engineer &middot; 2025&ndash;present</div>
+      <p>A five-stage inference pipeline&nbsp;&mdash; perception &rarr; strategy &rarr; assembly
+         &rarr; generation &rarr; memory&nbsp;&mdash; on one principle: perception belongs to the
+         language model, while control, persona, and routing are hard-coded in deterministic
+         logic (75 decision blocks in all). The result holds a consistent persona and durable
+         long-term memory across sessions and across underlying models (Gemma, Llama, Qwen)&nbsp;&mdash;
+         swapping the backbone is a config change, not a rewrite.</p>
+    </div>
+
+    <div class="row">
+      <h3>A 24/7 AI companion app</h3>
+      <div class="meta">First production deployment of ArcOS</div>
+      <!-- Truthful as of 2026-06: web + desktop are live; iOS v1.0 not yet approved, still in development.
+           Do NOT add "App Store" or a user count until confirmed. Do NOT link the
+           product's current off-brand URL here (keep LAT brand separate). -->
+      <p>The first real-world deployment of ArcOS: a 24/7 AI companion for everyday support and
+         reflection&nbsp;&mdash; live on the web and on desktop (macOS, Windows, Linux), with a native iOS
+         app in development. It&rsquo;s the proof that ArcOS holds a stable persona and remembers
+         context over the long term in real use.</p>
+    </div>
+
+    <div class="row">
+      <h3>Self-operated GPU infrastructure</h3>
+      <div class="meta">NVIDIA H200 NVL &middot; 143&nbsp;GB HBM3e</div>
+      <p>I own and operate a dedicated NVIDIA H200 and run the full ArcOS stack on it myself&nbsp;&mdash;
+         from model serving to deployment&nbsp;&mdash; without a large team.</p>
+    </div>
+
+    <div class="row">
+      <h3>Persona-persistence patent (in preparation)</h3>
+      <div class="meta">U.S. provisional &middot; with patent counsel</div>
+      <p>I&rsquo;m preparing a U.S. provisional patent application covering the hard-coded
+         persona-persistence architecture behind ArcOS.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>I&rsquo;m a serial founder&nbsp;&mdash; about nine years building companies across Asia-Pacific
+       and the United States, including an earlier AI hardware-and-software venture&nbsp;&mdash; with an
+       MBA from Heriot-Watt University.</p>
+    <p>I built most of ArcOS myself through AI-native development: roughly 380 commits, ~28k lines
+       of backend, 75 hard-coded decision blocks, and 250+ design documents. I care about AI that
+       is reliable, remembers, and stays in character&nbsp;&mdash; engineering the parts that have to be
+       deterministic, and letting the model do what it&rsquo;s good at.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="links">
+      <!-- 〔EMAIL〕 a role address on your own domain reads more serious + reduces spam.
+           Recommended: you@lightarktech.com. Fallback: your gmail.
+           Do NOT use the LAC-line gmail here (off-brand for LAT = L3 risk). -->
+      <a href="mailto:contact@lightarktech.com">Email</a>
+      <a href="https://github.com/wenhaijun91-cyber">GitHub</a>
+      <a href="https://x.com/HaijunWenAI">X / Twitter</a>
+      <a href="https://www.linkedin.com/in/haijunwen">LinkedIn</a>
+      <a href="https://lightarktech.com">Light Ark Technologies</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Haijun Wen &middot; Light Ark Technologies, Inc. &middot; California, USA
+  </footer>
+
+</div>
+</body>
+</html>
